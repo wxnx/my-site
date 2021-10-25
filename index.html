@@ -13,7 +13,7 @@
             grid-gap: 1rem;
         }
 
-        .grid>div {
+        .grid>button {
             background: #FF4500;
             padding: 1.5rem;
             border-radius: 1rem;
@@ -25,24 +25,207 @@
             margin: 5rem;
             font: 12px system-ui;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-profile,
+        .modal-github,
+        .modal-contact {
+            background-color: #FF4500;
+            margin: auto;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            width: 60%;
+        }
+
+        .close-profile,
+        .close-github,
+        .close-contact {
+            color: #000000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-profile:hover,
+        .close-github:hover,
+        .close-contact:hover,
+        .close-profile:focus,
+        .close-github:focus,
+        .close-contact:focus {
+            color: #FFFFFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 0.3rem;
+        }
+
+        .modal-body {
+            padding: 0.3rem;
+        }
+
+        .pp-pos {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 110px;
+            width: 120px;
+            border-radius: 1rem;
+        }
+
+        h2,
+        h3,
+        p {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="grid">
 
-        <div id="myButton">
+        <button id="myprofileBtn">
             Profile
+        </button>
+
+        <div id="profile" class="modal">
+
+
+            <div class="modal-profile">
+                <div class="modal-header">
+                    <span class="close-profile">&times;</span>
+                    <h2>Profile</h2>
+                </div>
+                <div class="modal-body">
+                    <img src="./photos/profile-pic.jpg" alt="Profile-Picture" class="pp-pos">
+                    <h3>Wino Rama Putra</h3>
+                    <p>I study at Telkom University. My majoring in Informatics (2017 - now).</p>
+                </div>
+
+            </div>
+
         </div>
 
+        <script>
+            var mProfile = document.getElementById("profile");
 
-        <div>
+            var bProfile = document.getElementById("myprofileBtn");
+
+            var sProfile = document.getElementsByClassName("close-profile")[0];
+
+            bProfile.onclick = function () {
+                mProfile.style.display = "block";
+            }
+
+            sProfile.onclick = function () {
+                mProfile.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == mProfile) {
+                    mProfile.style.display = "none";
+                }
+            }
+        </script>
+
+        <button id="mygithubBtn">
             My Github
+        </button>
+
+        <div id="github" class="modal">
+
+            <div class="modal-github">
+                <div class="modal-header">
+                    <span class="close-github">&times;</span>
+                    <h2>Github</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi beatae repudiandae! Nulla
+                        dolor esse vel quos? Mollitia sint repellendus corporis, iusto vel voluptatem, totam distinctio
+                        odio neque et explicabo!</p>
+                </div>
+            </div>
+
         </div>
 
-        <div>
+        <script>
+            var mGithub = document.getElementById("github");
+
+            var bGithub = document.getElementById("mygithubBtn");
+
+            var sGithub = document.getElementsByClassName("close-github")[0];
+
+            bGithub.onclick = function () {
+                mGithub.style.display = "block";
+            }
+
+            sGithub.onclick = function () {
+                mGithub.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == mGithub) {
+                    mGithub.style.display = "none";
+                }
+            }
+        </script>
+
+        <button id="mycontactBtn">
             My Contact
+        </button>
+
+        <div id="contact" class="modal">
+
+            <div class="modal-contact">
+                <div class="modal-header">
+                    <span class="close-contact">&times;</span>
+                    <h2>Contact</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi beatae repudiandae! Nulla
+                        dolor esse vel quos? Mollitia sint repellendus corporis, iusto vel voluptatem, totam distinctio
+                        odio neque et explicabo!</p>
+                </div>
+            </div>
+
         </div>
+
+        <script>
+            var mContact = document.getElementById("contact");
+
+            var bContact = document.getElementById("mycontactBtn");
+
+            var sContact = document.getElementsByClassName("close-contact")[0];
+
+            bContact.onclick = function () {
+                mContact.style.display = "block";
+            }
+
+            sContact.onclick = function () {
+                mContact.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == mContact) {
+                    mContact.style.display = "none";
+                }
+            }
+        </script>
+
     </div>
 
 </body>
