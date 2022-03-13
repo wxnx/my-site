@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Content from './routes/Content.svelte';
 	import Modal from './routes/Modal.svelte';
 	import { modal } from './routes/store.js';	
