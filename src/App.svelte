@@ -7,9 +7,11 @@
 </script>
 
 <main>
-	<Modal show={$modal}>
-		<Content />
-	</Modal>
+	<div class="content">
+		<Modal show={$modal}>
+			<Content />
+		</Modal>
+	</div>
 
 	<!-- <footer>
 		<Copyright>
@@ -20,10 +22,12 @@
 
 <style>
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+		height: 100%;
+		display: grid;
+	}
+
+	.content{
+		margin: auto;
 	}
 
 	@media (min-width: 640px) {
