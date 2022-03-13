@@ -1,7 +1,10 @@
+<script>
+    let Stats = 'https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=radical';
+</script>
 <main>
     <h2>
         Github
     </h2>
-    ![GitHub stats](https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=radical)
+    <img src={Stats} alt="">
 </main>
 
