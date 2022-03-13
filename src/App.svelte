@@ -2,12 +2,20 @@
 	import Content from './routes/Content.svelte';
 	import Modal from './routes/Modal.svelte';
 	import { modal } from './routes/store.js';	
+
+	import Copyright from 'svelte-copyright';
 </script>
 
 <main>
 	<Modal show={$modal}>
 		<Content />
 	</Modal>
+
+	<!-- <footer>
+		<Copyright>
+		  Wino Rama Putra
+		</Copyright>
+	  </footer> -->
 </main>
 
 <style>
