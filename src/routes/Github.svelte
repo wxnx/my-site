@@ -10,5 +10,10 @@
     <img src={Stats} alt="">
     <img src={Used_Language} alt="">
     <img src={Coding_Stats} alt="">
+
+    <h3>Ongoing Projects</h3>
+    <a href="https://github.com/wxnx/my-site">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=my-site&theme=dark" alt="" />
+    </a>
 </main>
 
