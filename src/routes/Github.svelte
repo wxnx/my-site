@@ -22,6 +22,8 @@
         text-align: center;
     }
     img{
+        min-width: 300px;
         text-align: center;
+
     }
 </style>
