@@ -28,11 +28,11 @@
 </script>
 
 <section>
-	<Button color="secondary" on:click={showProfile}>Profile</Button>
+	<Button color="primary" on:click={showProfile}>Profile</Button>
     <br>
-    <Button color="secondary" on:click={showGithub}>Github</Button>
+    <Button color="primary" on:click={showGithub}>Github</Button>
     <br>
-    <Button color="secondary" on:click={showContact}>Contact</Button>
+    <Button color="primary" on:click={showContact}>Contact</Button>
 
 	<div id="state">
 		{#if opening}
