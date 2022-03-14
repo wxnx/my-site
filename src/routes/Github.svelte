@@ -7,9 +7,9 @@
     <h2>
         Github
     </h2>
-    <img src={Stats} alt="">
-    <img src={Used_Language} alt="">
-    <img src={Coding_Stats} alt="">
+    <img class="img-responsive" src={Stats} alt="">
+    <img class="img-responsive" src={Used_Language} alt="">
+    <img class="img-responsive" src={Coding_Stats} alt="">
 
     <h3>Ongoing Projects</h3>
     <a href="https://github.com/wxnx/my-site">
@@ -23,6 +23,5 @@
     }
     img{
         text-align: center;
-        margin: auto;
     }
 </style>
