@@ -23,5 +23,6 @@
     }
     img{
         text-align: center;
+        margin: auto;
     }
 </style>
