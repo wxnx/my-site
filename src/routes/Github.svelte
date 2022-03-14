@@ -18,7 +18,10 @@
 </main>
 
 <style>
+    main{
+        text-align: center;
+    }
     img{
-        align-items: center;
+        text-align: center;
     }
 </style>
