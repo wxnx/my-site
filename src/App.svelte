@@ -1,7 +1,7 @@
 <script>
   import Transition from "svelte-class-transition";
 	import Typewriter from "svelte-typewriter";
-  let Profile = 'images/profile.jpg';
+  let Profile = './images/profile.jpg';
   let Stats = 'https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=dark&custom_title=Github%20Stats&layout=compact&count_private=true';
   let Used_Language = 'https://github-readme-stats.vercel.app/api/top-langs/?username=wxnx&langs_count=100&layout=compact&theme=dark&custom_title=Most%20Used%20Languages&card_width=444&count_private=true';
   let Coding_Stats = 'https://github-readme-stats.vercel.app/api/wakatime?username=wxnx&theme=dark&custom_title=Weekly%20Coding%20Stats&card_width=440';
