@@ -1,7 +1,7 @@
 <script>
   import Transition from "svelte-class-transition";
 	import Typewriter from "svelte-typewriter";
-  // let Profile = 'images/profile.jpg';
+  let Profile = 'images/profile.jpg';
   let Stats = 'https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=dark&custom_title=Github%20Stats&layout=compact&count_private=true';
   let Used_Language = 'https://github-readme-stats.vercel.app/api/top-langs/?username=wxnx&langs_count=100&layout=compact&theme=dark&custom_title=Most%20Used%20Languages&card_width=444&count_private=true';
   let Coding_Stats = 'https://github-readme-stats.vercel.app/api/wakatime?username=wxnx&theme=dark&custom_title=Weekly%20Coding%20Stats&card_width=440';
@@ -42,7 +42,7 @@
     >
       <div class="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40" id="home">
         <div class="grid justify-center items-center order-1 col-span-1">
-          <img class="lg:h-80 md:h-64 h-40 rounded-full" src="images/profile.jpg" alt="" />
+          <img class="lg:h-80 md:h-64 h-40 rounded-full" src={Profile} alt="" />
         </div>
         <div class="mt-8 md:mt-0 lg:justify-end col-span-2">
           <h1 class="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">
