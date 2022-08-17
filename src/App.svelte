@@ -1,7 +1,7 @@
 <script>
   import Transition from "svelte-class-transition";
 	import Typewriter from "svelte-typewriter";
-  let Profile = './images/profile.jpg';
+  let Profile = 'images/profile.JPG';
   let Stats = 'https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=dark&custom_title=Github%20Stats&layout=compact&count_private=true';
   let Used_Language = 'https://github-readme-stats.vercel.app/api/top-langs/?username=wxnx&langs_count=100&layout=compact&theme=dark&custom_title=Most%20Used%20Languages&card_width=444&count_private=true';
   let Coding_Stats = 'https://github-readme-stats.vercel.app/api/wakatime?username=wxnx&theme=dark&custom_title=Weekly%20Coding%20Stats&card_width=440';
@@ -10,7 +10,7 @@
   let email = 'https://img.shields.io/badge/-Gmail-black?style=for-the-badge&logo=Gmail';
 </script>
 
-<main class="bg-body text-black font-Montserrat pb-12 scroll-behavior: smooth; overflow-scroll">
+<main class="bg-body text-indigo-600 font-Montserrat pb-12 scroll-behavior: smooth; overflow-scroll;">
   <!-- Header -->
   <header class="py-6"> 
     <Transition
@@ -19,7 +19,7 @@
       inState="opacity-0 -translate-x-16"
       onState="opacity-100 translate-x-0"
     >
-      <div class="container mx-auto  max-w-8xl flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <!-- <div class="container mx-auto  max-w-8xl flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a class="flex title-font font-medium items-center text-indigo-600 mb-4 md:mb-0" href="/">
           <span class="ml-3 text-xl font-bold">wxnx</span>
         </a>
@@ -30,6 +30,33 @@
           <a href="#contact" class="mr-5 font-bold lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">My Contacts</a>
         </nav>
         <button class="btn btn-primary px-6 py-2 bg-base font-bold  mt-4 md:mt-0"><a href="mailto:wino99oniw@gmail.com">Hire Me</a></button>
+      </div> -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <!-- <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content absolute relative mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portofolio">My Portofolio</a></li>
+            <li><a href="#contact">My Contacts</a></li>
+            </ul>
+          </div> -->
+          <a class="btn btn-ghost normal-case text-xl" href="/">wxnx'site</a>
+        </div>
+        <!-- <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portofolio">My Portofolio</a></li>
+            <li><a href="#contact">My Contacts</a></li>
+          </ul>
+        </div> -->
+        <div class="navbar-end">
+          <a class="btn btn-primary" href="mailto:wino99oniw@gmail.com">Hire Me</a>
+        </div>
       </div>
     </Transition>
 
@@ -40,9 +67,9 @@
       inState="opacity-0 -translate-y-16"
       onState="opacity-100 translate-x-0"
     >
-      <div class="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40" id="home">
+      <div class="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-20" id="home">
         <div class="grid justify-center items-center order-1 col-span-1">
-          <img class="lg:h-80 md:h-64 h-40 rounded-full" src={Profile} alt="" />
+          <img class="block lg:h-80 md:h-64 h-40 rounded-full" src={Profile} alt="" />
         </div>
         <div class="mt-8 md:mt-0 lg:justify-end col-span-2">
           <h1 class="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">
@@ -55,11 +82,24 @@
           <button class="block mt-8 mx-auto md:mx-0 text-2xl py-2 px-6 text-red-50 font-semibold rounded bg-indigo-500 hover:bg-indigo-800"><a href="https://drive.google.com/file/d/1GCeSgvKKbtUPpc4RrU22PT8zQdpCot1k/view?usp=sharing">Download Resume</a></button>
         </div>
       </div>
+      <!-- <div class="hero min-h-screen bg-base-100">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src={Profile} class="lg:h-80 md:h-64 h-40 rounded-full" />
+          <div>
+            <h1 class="text-5xl font-bold">
+              <span>Hi, I’m Wino Rama Putra.</span><br>
+              <span>Creative <Typewriter loopRandom><span>Web Developer.</span><span>Coder.</span></Typewriter></span>
+            </h1>
+            <p class="py-6">I'm a Fresh Graduate Bachelor of Informatics.</p>
+            <button class="btn btn-primary"><a href="https://drive.google.com/file/d/1GCeSgvKKbtUPpc4RrU22PT8zQdpCot1k/view?usp=sharing">Download Resume</a></button>
+          </div>
+        </div>
+      </div> -->
     </Transition>
   </header>
 
   <!-- About -->
-  <section class="bg-gray-800 pattern py-20" id="about">
+  <section class="py-20" id="about">
     <Transition
       transitions="transition transform"
       inTransition="ease-out duration-1000"
@@ -67,7 +107,7 @@
       onState="opacity-100 translate-x-0"
     >   
       <div class="max-w-5xl px-6 mx-auto text-center">
-        <h1 class="text-4xl font-semibold text-white">About Me</h1>
+        <h1 class="secondary-title text-4xl font-bold mb-6">About Me</h1>
         <p class="text-gray-500 mt-4">
         I am an adaptable person and have an interest in technological advances. Interested in programming, especially in Website Development, Mobile Apps Development, and also related to Machine Learning. For my interest in Mobile Developer is still in the early stages of learning and for Machine Learning Engineer is quite advanced. And now I want to apply my interest as a Web Developer to something that has value. It is not impossible that one day I will apply all my interests to a real value.
         </p>
@@ -131,7 +171,7 @@
   </section>
 
   <!-- Portofolio -->
-  <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="portofolio"> 
+  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="portofolio"> 
     <Transition 
       transitions="transition transform"
       inTransition="ease-out duration-1000"
@@ -210,7 +250,7 @@
   </div>  
 
   <!-- Contact -->
-  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="contact">
+  <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="contact">
     <section class="w-full">
       <h2 id="" class="secondary-title md:text-left mb-6 font-bold text-4xl">My Contacts</h2>
       <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-0">
@@ -233,7 +273,7 @@
 
   <!-- Footer -->
   <div class="container mt-5 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-    <section class="w-full text-center">
+    <section class="w-full text-center text-gray-500">
       <p>Copyright © 2022 - All right reserved</p>
     </section>
   </div>
