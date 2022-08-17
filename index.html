@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wxnx'site</title>
   </head>
+  <script>
+    window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
+  </script>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
