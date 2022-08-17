@@ -171,7 +171,7 @@
   </section>
 
   <!-- Portofolio -->
-  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="portofolio"> 
+  <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="portofolio"> 
     <Transition 
       transitions="transition transform"
       inTransition="ease-out duration-1000"
@@ -250,7 +250,7 @@
   </div>  
 
   <!-- Contact -->
-  <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="contact">
+  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="contact">
     <section class="w-full">
       <h2 id="" class="secondary-title md:text-left mb-6 font-bold text-4xl">My Contacts</h2>
       <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-0">
