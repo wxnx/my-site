@@ -73,7 +73,7 @@
         </div>
         <div class="mt-8 md:mt-0 lg:justify-end col-span-2">
           <h1 class="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">
-            <span class="block xl:inline text-indigo-600">Hi, I’m Wino Rama Putra.</span><br>
+            <span class="block xl:inline text-indigo-600">Hi, I’m Wino Rama Putra.</span>
             <span class="block text-indigo-600 xl:inline">Creative <Typewriter loopRandom><span>Web Developer.</span><span>Coder.</span></Typewriter></span>
           </h1>
           <p class="text-xl text-gray-500 text-center font-medium md:text-left">
