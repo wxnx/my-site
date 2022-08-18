@@ -2,6 +2,8 @@
   import Transition from "svelte-class-transition";
 	import Typewriter from "svelte-typewriter";
   import Carousel from 'svelte-carousel';
+  import Icon from 'svelte-awesome';
+  import { graduationCap, book, fileTextO, language } from 'svelte-awesome/icons';
   let Profile = 'images/profile.JPG';
   let Stats = 'https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=dark&custom_title=Github%20Stats&layout=compact&count_private=true';
   let Used_Language = 'https://github-readme-stats.vercel.app/api/top-langs/?username=wxnx&langs_count=100&layout=compact&theme=dark&custom_title=Most%20Used%20Languages&card_width=444&count_private=true';
@@ -121,30 +123,26 @@
           <div class="max-w-5xl px-6 py-5 mx-auto text-center">
             <h2 class="text-2xl font-semibold text-indigo-600">Education</h2>
             <p class="text-gray-500 mt-4">
-          Bachelor of Informatics : Telkom University (2017-2022)
+              <Icon data={graduationCap} scale={1.5}/>Bachelor of Informatics : Telkom University (2017-2022)
             </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
           <h2 class="text-2xl font-semibold text-indigo-600">Publication</h2>
           <p class="text-gray-500 mt-4">
-          <a href="https://ieeexplore.ieee.org/document/9689119">Study of Feature Extraction Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a>
+            <Icon data={book} scale={1.5}/><a href="https://ieeexplore.ieee.org/document/9689119">Study of Feature Extraction Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a>
           </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
           <h2 class="text-2xl font-semibold text-indigo-600">Test Scores</h2>
           <p class="text-gray-500 mt-4">
-          English Proficiency Test (EPrT) : 450 out of 677 (Dec 2021)
+            <Icon data={fileTextO} scale={1.5}/>English Proficiency Test (EPrT) : 450 out of 677 (Dec 2021)
           </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
           <h2 class="text-2xl font-semibold text-indigo-600">Languages</h2>
           <p class="text-gray-500 mt-4">
-          <li>
-            Indonesia : Native or bilingual proficiency
-          </li>
-          <li>
-            English : Limited working proficiency
-          </li>
+            <Icon data={language} scale={1.5}/>Indonesia : Native or bilingual proficiency <br>
+            <Icon data={language} scale={1.5}/>IEnglish : Limited working proficiency
           </p>
         </div>
         </Carousel>

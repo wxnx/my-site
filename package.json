@@ -20,6 +20,7 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
+    "svelte-awesome": "^3.0.0",
     "svelte-class-transition": "^1.0.4",
     "svelte-typewriter": "^3.0.0-alpha.11"
   }
