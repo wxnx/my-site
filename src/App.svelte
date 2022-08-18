@@ -1,6 +1,7 @@
 <script>
   import Transition from "svelte-class-transition";
 	import Typewriter from "svelte-typewriter";
+  import Carousel from 'svelte-carousel';
   let Profile = 'images/profile.JPG';
   let Stats = 'https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=dark&custom_title=Github%20Stats&layout=compact&count_private=true';
   let Used_Language = 'https://github-readme-stats.vercel.app/api/top-langs/?username=wxnx&langs_count=100&layout=compact&theme=dark&custom_title=Most%20Used%20Languages&card_width=444&count_private=true';
@@ -111,67 +112,48 @@
         <p class="text-gray-500 mt-4">
         I am an adaptable person and have an interest in technological advances. Interested in programming, especially in Website Development, Mobile Apps Development, and also related to Machine Learning. For my interest in Mobile Developer is still in the early stages of learning and for Machine Learning Engineer is quite advanced. And now I want to apply my interest as a Web Developer to something that has value. It is not impossible that one day I will apply all my interests to a real value.
         </p>
-        <div class="carousel w-full">
-          <div id="Education" class="carousel-item relative w-full">
-            <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-              <h2 class="text-2xl font-semibold text-white">Education</h2>
-              <p class="text-gray-500 mt-4">
-              Bachelor of Informatics : Telkom University (2017-2022)
-              </p>
-            </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#Languages" class="btn btn-circle">❮</a> 
-              <a href="#Publication" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="Publication" class="carousel-item relative w-full">
+        <Carousel
+          autoplay
+          autoplayDuration={5000}
+          autoplayProgressVisible
+          pauseOnFocus
+        >
           <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-            <h2 class="text-2xl font-semibold text-white">Publication</h2>
+            <h2 class="text-2xl font-semibold text-white">Education</h2>
             <p class="text-gray-500 mt-4">
-            <a href="https://ieeexplore.ieee.org/document/9689119">Study of Feature Extraction Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a>
+          Bachelor of Informatics : Telkom University (2017-2022)
             </p>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#Education" class="btn btn-circle">❮</a> 
-            <a href="#TestScores" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="TestScores" class="carousel-item relative w-full">
-          <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-            <h2 class="text-2xl font-semibold text-white">Test Scores</h2>
-            <p class="text-gray-500 mt-4">
-            English Proficiency Test (EPrT) : 450 out of 677 (Dec 2021)
-            </p>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#Publication" class="btn btn-circle">❮</a> 
-            <a href="#Languages" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="Languages" class="carousel-item relative w-full">
-          <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-            <h2 class="text-2xl font-semibold text-white">Languages</h2>
-            <p class="text-gray-500 mt-4">
-            <li>
-              Indonesia : Native or bilingual proficiency
-            </li>
-            <li>
-              English : Limited working proficiency
-            </li>
-            </p>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#TestScores" class="btn btn-circle">❮</a> 
-            <a href="#Education" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-      </div>
+        </div>
+        <div class="max-w-5xl px-6 py-5 mx-auto text-center">
+          <h2 class="text-2xl font-semibold text-white">Publication</h2>
+          <p class="text-gray-500 mt-4">
+          <a href="https://ieeexplore.ieee.org/document/9689119">Study of Feature Extraction Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a>
+          </p>
+        </div>
+        <div class="max-w-5xl px-6 py-5 mx-auto text-center">
+          <h2 class="text-2xl font-semibold text-white">Test Scores</h2>
+          <p class="text-gray-500 mt-4">
+          English Proficiency Test (EPrT) : 450 out of 677 (Dec 2021)
+          </p>
+        </div>
+        <div class="max-w-5xl px-6 py-5 mx-auto text-center">
+          <h2 class="text-2xl font-semibold text-white">Languages</h2>
+          <p class="text-gray-500 mt-4">
+          <li>
+            Indonesia : Native or bilingual proficiency
+          </li>
+          <li>
+            English : Limited working proficiency
+          </li>
+          </p>
+        </div>
+        </Carousel>
     </div>
   </Transition>
   </section>
 
   <!-- Portofolio -->
-  <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="portofolio"> 
+  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="portofolio"> 
     <Transition 
       transitions="transition transform"
       inTransition="ease-out duration-1000"
@@ -208,29 +190,16 @@
       These are some stats from my github.
       </p>
       <div class="space-y-12 my-5">
-        <div class="carousel w-full">
-          <div id="GithubStats" class="carousel-item relative w-full">
-            <img src={Stats} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#WeeklyCodingStats" class="btn btn-circle">❮</a> 
-              <a href="#MostUsedLanguages" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-          <div id="MostUsedLanguages" class="carousel-item relative w-full">
-            <img src={Used_Language} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#GithubStats" class="btn btn-circle">❮</a> 
-              <a href="#WeeklyCodingStats" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-          <div id="WeeklyCodingStats" class="carousel-item relative w-full">
-            <img src={Coding_Stats} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#MostUsedLanguages" class="btn btn-circle">❮</a> 
-              <a href="#GithubStats" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-        </div>
+        <Carousel
+          autoplay
+          autoplayDuration={5000}
+          autoplayProgressVisible
+          pauseOnFocus
+        >
+          <img src={Stats} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
+          <img src={Used_Language} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
+          <img src={Coding_Stats} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
+        </Carousel>
       </div>
     </section>
   </div>
@@ -250,7 +219,7 @@
   </div>  
 
   <!-- Contact -->
-  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="contact">
+  <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="contact">
     <section class="w-full">
       <h2 id="" class="secondary-title md:text-left mb-6 font-bold text-4xl">My Contacts</h2>
       <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-0">
