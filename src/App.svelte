@@ -119,25 +119,25 @@
           pauseOnFocus
         >
           <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-            <h2 class="text-2xl font-semibold text-white">Education</h2>
+            <h2 class="text-2xl font-semibold text-indigo-600">Education</h2>
             <p class="text-gray-500 mt-4">
           Bachelor of Informatics : Telkom University (2017-2022)
             </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-          <h2 class="text-2xl font-semibold text-white">Publication</h2>
+          <h2 class="text-2xl font-semibold text-indigo-600">Publication</h2>
           <p class="text-gray-500 mt-4">
           <a href="https://ieeexplore.ieee.org/document/9689119">Study of Feature Extraction Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a>
           </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-          <h2 class="text-2xl font-semibold text-white">Test Scores</h2>
+          <h2 class="text-2xl font-semibold text-indigo-600">Test Scores</h2>
           <p class="text-gray-500 mt-4">
           English Proficiency Test (EPrT) : 450 out of 677 (Dec 2021)
           </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
-          <h2 class="text-2xl font-semibold text-white">Languages</h2>
+          <h2 class="text-2xl font-semibold text-indigo-600">Languages</h2>
           <p class="text-gray-500 mt-4">
           <li>
             Indonesia : Native or bilingual proficiency
