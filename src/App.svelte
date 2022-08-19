@@ -221,7 +221,7 @@
               <div class="card-body items-center text-center">
                 <h2 class="card-title">Development My Portfolio Site</h2>
                 <p class="text-gray-800">
-                  <a href="https://colab.research.google.com/drive/1rB2JgCGDUaXdUvT-sW3KScLdk9DYKbpW?usp=sharing">
+                  <a href="https://github.com/wxnx/my-site.git">
                     <Icon data={externalLink} scale={1.2} /> &nbsp; Find out more
                   </a>
                 </p>
