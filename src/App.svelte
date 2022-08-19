@@ -129,7 +129,7 @@
           <h2 class="text-2xl font-semibold text-indigo-600">Languages</h2>
           <p class="text-gray-500 mt-4">
             <Icon data={language} scale={1.5}/> &nbsp; Indonesia : Native or bilingual proficiency <br>
-            <Icon data={language} scale={1.5}/> &nbsp; IEnglish : Limited working proficiency
+            <Icon data={language} scale={1.5}/> &nbsp; English : Limited working proficiency
           </p>
         </div>
         </Carousel>
@@ -137,8 +137,8 @@
   </Transition>
   </section>
 
-  <!-- Portofolio -->
-  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="portofolio"> 
+  <!-- Project -->
+  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="projects"> 
     <Transition 
       transitions="transition transform"
       inTransition="ease-out duration-1000"
@@ -146,7 +146,7 @@
       onState="opacity-100 translate-x-0"
     > 
       <section class="w-full text-center">
-        <h2 id="work" class="secondary-title md:text-left text-4xl font-bold mb-6">Portfolio</h2>
+        <h2 id="work" class="secondary-title md:text-left text-4xl font-bold mb-6">Projects</h2>
         <p class="section-paragraph md:text-left text-gray-500">
         These are some of the projects I have worked on. These include the Build Feature Extraction project (as a college final project and also for PPM Telkom University) and Web Development (PPM Telkom University).
         </p>
@@ -182,27 +182,29 @@
     </Transition>
   </div>
 
-  <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+  <!-- Github Stats -->
+  <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24">
     <section class="w-full">
       <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">My Github Stats</h2>
       <p class="section-paragraph md:text-left text-gray-500">
       These are some stats from my github.
       </p>
-      <div class="space-y-12 my-5">
+      <div class="space-y-12 my-5 lg:px-72 justify-items-stretch">
         <Carousel
           autoplay
           autoplayDuration={5000}
           autoplayProgressVisible
           pauseOnFocus
         >
-          <img src={Stats} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
-          <img src={Used_Language} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
-          <img src={Coding_Stats} class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="">
+          <img src={Stats} class="w-full rounded-xl" alt="">
+          <img src={Used_Language} class="w-full rounded-xl" alt="">
+          <img src={Coding_Stats} class="w-full rounded-xl" alt="">
         </Carousel>
       </div>
     </section>
   </div>
 
+  <!-- Ongoing Projects -->
   <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
     <section class="w-full text-center">
       <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">Ongoing Projects</h2>
