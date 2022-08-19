@@ -3,7 +3,7 @@
 	import Typewriter from "svelte-typewriter";
   import Carousel from 'svelte-carousel';
   import Icon from 'svelte-awesome';
-  import { graduationCap, book, fileTextO, language } from 'svelte-awesome/icons';
+  import { graduationCap, book, fileTextO, language, externalLink } from 'svelte-awesome/icons';
   let Profile = 'images/profile.JPG';
   let Stats = 'https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=dark&custom_title=Github%20Stats&layout=compact&count_private=true';
   let Used_Language = 'https://github-readme-stats.vercel.app/api/top-langs/?username=wxnx&langs_count=100&layout=compact&theme=dark&custom_title=Most%20Used%20Languages&card_width=444&count_private=true';
@@ -36,7 +36,7 @@
       </div> -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
-          <!-- <div class="dropdown">
+          <!-- <div class="dropdown ">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
@@ -70,7 +70,7 @@
       inState="opacity-0 -translate-y-16"
       onState="opacity-100 translate-x-0"
     >
-      <div class="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-20" id="home">
+      <div class="container mx-auto mt-10 md:mt-8 md:space-x-8 md:py-20 md:grid grid-cols-3 justify-center lg:px-20" id="home">
         <div class="grid justify-center items-center order-1 col-span-1">
           <img class="block lg:h-80 md:h-64 h-40 rounded-full" src={Profile} alt="" />
         </div>
@@ -85,19 +85,6 @@
           <button class="block mt-8 mx-auto md:mx-0 text-2xl py-2 px-6 text-red-50 font-semibold rounded bg-indigo-500 hover:bg-indigo-800"><a href="https://drive.google.com/uc?id=1GCeSgvKKbtUPpc4RrU22PT8zQdpCot1k&export=download">Download Resume</a></button>
         </div>
       </div>
-      <!-- <div class="hero min-h-screen bg-base-100">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <img src={Profile} class="lg:h-80 md:h-64 h-40 rounded-full" />
-          <div>
-            <h1 class="text-5xl font-bold">
-              <span>Hi, I’m Wino Rama Putra.</span><br>
-              <span>Creative <Typewriter loopRandom><span>Web Developer.</span><span>Coder.</span></Typewriter></span>
-            </h1>
-            <p class="py-6">I'm a Fresh Graduate Bachelor of Informatics.</p>
-            <button class="btn btn-primary"><a href="https://drive.google.com/file/d/1GCeSgvKKbtUPpc4RrU22PT8zQdpCot1k/view?usp=sharing">Download Resume</a></button>
-          </div>
-        </div>
-      </div> -->
     </Transition>
   </header>
 
@@ -164,16 +151,30 @@
         These are some of the projects I have worked on. These include the Build Feature Extraction project (as a college final project and also for PPM Telkom University) and Web Development (PPM Telkom University).
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div class="img-wrapper relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" class="w-full bg-nav h-36 lg:h-72 object-cover hover:scale-110 transition duration-300 ease-in-out" alt=""/>
-            <div class="img-overlay w-full h-full absolute top-0 z-10 after:w-full after:rounded after:h-full after:absolute after:top-0 after:left-0 after:opacity-0 after:bg-black">
-              <h2 class="img__title relative mb-8 my-16 text-4xl font-Oswald font-thin text-white text-center transition duration 0.3s ease-in-out tracking-wider"><a class="img__link relative block w-3/5 p-2.5 font-Montserrat font-medium text-white no-underline hover:bg-secondary text-center text-base border-solid border-2 border-white tracking-wider mx-auto transition duration 0.3 ease-in-out hover:text-gray-50" href="https://colab.research.google.com/drive/1rB2JgCGDUaXdUvT-sW3KScLdk9DYKbpW?usp=sharing">Build Feature Extraction Model with Python</a></h2>
+          <div class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out">
+            <figure class="px-10 pt-10">
+              <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=Data_Program&theme=dark" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Build Feature Extraction Model with Python</h2>
+              <p class="text-gray-800">
+                <a href="https://colab.research.google.com/drive/1rB2JgCGDUaXdUvT-sW3KScLdk9DYKbpW?usp=sharing">
+                  <Icon data={externalLink} scale={1.2} /> &nbsp; Find out more
+                </a>
+              </p>
             </div>
           </div>
-          <div class="img-wrapper relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="w-full bg-nav h-36 lg:h-72 object-cover hover:scale-110 transition duration-300 ease-in-out" alt=""/>
-            <div class="img-overlay w-full h-full absolute top-0 z-10 after:w-full after:rounded after:h-full after:absolute after:top-0 after:left-0 after:opacity-0 after:bg-black">
-              <h2 class="img__title relative mb-8 my-16 text-4xl font-Oswald font-thin text-white text-center transition duration 0.3s ease-in-out tracking-wider"><a class="img__link relative block w-3/5 p-2.5 font-Montserrat font-medium text-white no-underline hover:bg-secondary text-center text-base border-solid border-2 border-white tracking-wider mx-auto transition duration 0.3 ease-in-out hover:text-gray-50" href="https://github.com/wxnx/stetoskop_digital.git">Web Development with Laravel Framework</a></h2>
+          <div class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out">
+            <figure class="px-10 pt-10">
+              <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=stetoskop_digital&theme=dark" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Web Development with Laravel Framework</h2>
+              <p class="text-gray-800">
+                <a href="https://github.com/wxnx/stetoskop_digital.git">
+                  <Icon data={externalLink} scale={1.2}/> &nbsp; Find out more
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -203,15 +204,29 @@
   </div>
 
   <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-    <section class="w-full">
+    <section class="w-full text-center">
       <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">Ongoing Projects</h2>
       <p class="section-paragraph md:text-left text-gray-500">
       This is a project I'm still working on.
       </p>
       <div class="space-y-12 my-5">
-        <a href="https://github.com/wxnx/my-site">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=my-site&theme=dark" class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:scale-110 transition duration-300 ease-in-out" alt="" />
-        </a>    
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <div class="items-center relative">
+            <div class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out">
+              <figure class="px-10 pt-10">
+                <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=my-site&theme=dark" alt="" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Development My Portfolio Site</h2>
+                <p class="text-gray-800">
+                  <a href="https://colab.research.google.com/drive/1rB2JgCGDUaXdUvT-sW3KScLdk9DYKbpW?usp=sharing">
+                    <Icon data={externalLink} scale={1.2} /> &nbsp; Find out more
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>  
@@ -252,31 +267,6 @@
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
-  .img-overlay:after {
-    content: "";
-    z-index: -10;
-    transition: all 0.3s ease;
-  }
-  .img__title {
-    top: -200px;
-  }
-  .img__link {
-    top: 200px;
-  }
-  .img-wrapper:hover .img__title {
-    top: 0;
-  }
-  .img-wrapper:hover .img__link {
-    top: 0;
-  }
-  .img-wrapper:hover .img-overlay:after {
-    opacity: 0.75;
-  }
-  @media only screen and (min-width: 305px) {
-    .img-wrapper:hover .img__title {
-      margin-top: auto;
-    }
-  }
   a .contact1 .contact2 .contact3{
     width: 42px;
     height: 42px;
