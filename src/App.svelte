@@ -110,26 +110,26 @@
           <div class="max-w-5xl px-6 py-5 mx-auto text-center">
             <h2 class="text-2xl font-semibold text-indigo-600">Education</h2>
             <p class="text-gray-500 mt-4">
-              <Icon data={graduationCap} scale={1.5}/>Bachelor of Informatics : Telkom University (2017-2022)
+              <Icon data={graduationCap} scale={1.5}/> &nbsp; Bachelor of Informatics : Telkom University (2017-2022)
             </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
           <h2 class="text-2xl font-semibold text-indigo-600">Publication</h2>
           <p class="text-gray-500 mt-4">
-            <Icon data={book} scale={1.5}/><a href="https://ieeexplore.ieee.org/document/9689119">Study of Feature Extraction Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a>
+            <a href="https://ieeexplore.ieee.org/document/9689119"><Icon data={book} scale={1.5}/> &nbsp; Study of Feature Extraction Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a>
           </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
           <h2 class="text-2xl font-semibold text-indigo-600">Test Scores</h2>
           <p class="text-gray-500 mt-4">
-            <Icon data={fileTextO} scale={1.5}/>English Proficiency Test (EPrT) : 450 out of 677 (Dec 2021)
+            <Icon data={fileTextO} scale={1.5}/> &nbsp; English Proficiency Test (EPrT) : 450 out of 677 (Dec 2021)
           </p>
         </div>
         <div class="max-w-5xl px-6 py-5 mx-auto text-center">
           <h2 class="text-2xl font-semibold text-indigo-600">Languages</h2>
           <p class="text-gray-500 mt-4">
-            <Icon data={language} scale={1.5}/>Indonesia : Native or bilingual proficiency <br>
-            <Icon data={language} scale={1.5}/>IEnglish : Limited working proficiency
+            <Icon data={language} scale={1.5}/> &nbsp; Indonesia : Native or bilingual proficiency <br>
+            <Icon data={language} scale={1.5}/> &nbsp; IEnglish : Limited working proficiency
           </p>
         </div>
         </Carousel>
