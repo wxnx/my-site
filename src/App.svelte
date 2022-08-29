@@ -82,7 +82,7 @@
           <p class="text-xl text-gray-500 text-center font-medium md:text-left">
             I'm a Fresh Graduate Bachelor of Informatics.
           </p>
-          <button class="block mt-8 mx-auto md:mx-0 text-2xl py-2 px-6 text-red-50 font-semibold rounded bg-indigo-500 hover:bg-indigo-800"><a href="https://drive.google.com/uc?id=1GCeSgvKKbtUPpc4RrU22PT8zQdpCot1k&export=download">Download Resume</a></button>
+          <button class="block mt-8 mx-auto md:mx-0 text-2xl py-2 px-6 text-red-50 font-semibold rounded bg-indigo-500 hover:bg-indigo-800"><a href="https://drive.google.com/uc?id=1Do1zZA-COMqyzGTPFPtig7L09O5enzbl&export=download">Download Resume</a></button>
         </div>
       </div>
     </Transition>
