@@ -47,7 +47,7 @@
             <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl" href="/">wxnx'site</a>
+          <a class="btn btn-ghost normal-case text-xl" href="/">winoramaputra'site</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0">
