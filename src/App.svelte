@@ -34,29 +34,29 @@
         </nav>
         <button class="btn btn-primary px-6 py-2 bg-base font-bold  mt-4 md:mt-0"><a href="mailto:wino99oniw@gmail.com">Hire Me</a></button>
       </div> -->
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-base-100 fixed-top md:px-60">
         <div class="navbar-start">
-          <!-- <div class="dropdown ">
+          <div class="dropdown ">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content absolute relative mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portofolio">My Portofolio</a></li>
-            <li><a href="#contact">My Contacts</a></li>
+              <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
-          </div> -->
+          </div>
           <a class="btn btn-ghost normal-case text-xl" href="/">wxnx'site</a>
         </div>
-        <!-- <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portofolio">My Portofolio</a></li>
-            <li><a href="#contact">My Contacts</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div> -->
+        </div>
         <div class="navbar-end">
           <a class="btn btn-primary" href="mailto:wino99oniw@gmail.com">Hire Me</a>
         </div>
@@ -70,7 +70,7 @@
       inState="opacity-0 -translate-y-16"
       onState="opacity-100 translate-x-0"
     >
-      <div class="container mx-auto mt-10 md:mt-8 md:space-x-8 md:py-20 md:grid grid-cols-3 justify-center lg:px-20" id="home">
+      <div class="container mx-auto mt-10 md:mt-8 md:space-x-8 md:py-40 md:grid grid-cols-3 justify-center lg:px-20" id="home">
         <div class="grid justify-center items-center order-1 col-span-1">
           <img class="block lg:h-80 md:h-64 h-40 rounded-full" src={Profile} alt="" />
         </div>
@@ -97,7 +97,7 @@
       onState="opacity-100 translate-x-0"
     >   
       <div class="max-w-5xl px-6 mx-auto text-center">
-        <h1 class="secondary-title text-4xl font-bold mb-6">About Me</h1>
+        <h1 class="secondary-title text-4xl font-bold mb-6">About</h1>
         <p class="text-gray-500 mt-4">
         I am an adaptable person and have an interest in technological advances. Interested in programming, especially in Website Development, Mobile Apps Development, and also related to Machine Learning. For my interest in Mobile Developer is still in the early stages of learning and for Machine Learning Engineer is quite advanced. And now I want to apply my interest as a Web Developer to something that has value. It is not impossible that one day I will apply all my interests to a real value.
         </p>
@@ -138,7 +138,7 @@
   </section>
 
   <!-- Project -->
-  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="projects"> 
+  <div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full py-20" id="project"> 
     <Transition 
       transitions="transition transform"
       inTransition="ease-out duration-1000"
@@ -146,7 +146,7 @@
       onState="opacity-100 translate-x-0"
     > 
       <section class="w-full text-center">
-        <h2 id="work" class="secondary-title md:text-left text-4xl font-bold mb-6">Projects</h2>
+        <h2 id="work" class="secondary-title md:text-left text-4xl font-bold mb-6">Project</h2>
         <p class="section-paragraph md:text-left text-gray-500">
         These are some of the projects I have worked on. These include the Build Feature Extraction project (as a college final project and also for PPM Telkom University) and Web Development (PPM Telkom University).
         </p>
@@ -185,7 +185,7 @@
   <!-- Github Stats -->
   <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24">
     <section class="w-full">
-      <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">My Github Stats</h2>
+      <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">Github Stats</h2>
       <p class="section-paragraph md:text-left text-gray-500">
       These are some stats from my github.
       </p>
@@ -207,7 +207,7 @@
   <!-- Ongoing Projects -->
   <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
     <section class="w-full text-center">
-      <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">Ongoing Projects</h2>
+      <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">Ongoing Project</h2>
       <p class="section-paragraph md:text-left text-gray-500">
       This is a project I'm still working on.
       </p>
@@ -236,7 +236,7 @@
   <!-- Contact -->
   <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" id="contact">
     <section class="w-full">
-      <h2 id="" class="secondary-title md:text-left mb-6 font-bold text-4xl">My Contacts</h2>
+      <h2 id="" class="secondary-title md:text-left mb-6 font-bold text-4xl">Contact</h2>
       <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-0">
         <div class="mt-0">
           <div class="flex mt-0 space-x-6">
