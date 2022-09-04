@@ -207,25 +207,36 @@
   <!-- Ongoing Projects -->
   <div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
     <section class="w-full text-center">
-      <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">Ongoing Project</h2>
+      <h2 id="" class="secondary-title md:text-left text-4xl font-bold mb-6">Personal Project</h2>
       <p class="section-paragraph md:text-left text-gray-500">
       This is a project I'm still working on.
       </p>
       <div class="space-y-12 my-5">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div class="items-center relative">
-            <div class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out">
-              <figure class="px-10 pt-10">
-                <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=my-site&theme=dark" alt="" class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Development My Portfolio Site</h2>
-                <p class="text-gray-800">
-                  <a href="https://github.com/wxnx/my-site.git">
-                    <Icon data={externalLink} scale={1.2} /> &nbsp; Find out more
-                  </a>
-                </p>
-              </div>
+          <div class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out">
+            <figure class="px-10 pt-10">
+              <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=my-site&theme=dark" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Development My Portfolio Site</h2>
+              <p class="text-gray-800">
+                <a href="https://github.com/wxnx/my-site.git">
+                  <Icon data={externalLink} scale={1.2} /> &nbsp; Find out more
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out">
+            <figure class="px-10 pt-10">
+              <img src="https://github-readme-stats.vercel.app/api/pin/?username=wxnx&repo=twitter-bot&theme=dark" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Twitter Bot</h2>
+              <p class="text-gray-800">
+                <a href="https://github.com/wxnx/twitter-bot.git">
+                  <Icon data={externalLink} scale={1.2} /> &nbsp; Find out more
+                </a>
+              </p>
             </div>
           </div>
         </div>
