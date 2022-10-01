@@ -16,7 +16,7 @@
   onState="opacity-100 translate-x-0"
 >
   <div class="container mx-auto">
-    <div class="flex justify-center mt-0 space-x-6 pt-36">
+    <div class="flex justify-center mt-0 md:space-x-6 lg:space-x-6 pt-36">
       <a href="mailto:wino99oniw@gmail.com">
         <img class="contact1" src={email} alt="" />
       </a>

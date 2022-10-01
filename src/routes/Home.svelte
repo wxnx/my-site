@@ -11,7 +11,7 @@
   inState="opacity-0 -translate-y-16"
   onState="opacity-100 translate-x-0"
 >
-  <div class="container mx-auto justify-center items-center">
+  <div class="container mx-auto justify-center items-center py-36 md:py-0">
     <div class="hero min-h-screen">
       <div class="hero-content text-center">
         <div class="md:max-w-2xl">
