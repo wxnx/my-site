@@ -1,15 +1,22 @@
 <script>
   import "./app.css";
   import Transition from "svelte-class-transition";
-  import { Router, Link, Route } from "svelte-navigator";
+  import {
+    Router,
+    Link,
+    Route,
+    createHistory,
+    createMemorySource,
+  } from "svelte-navigator";
   import Home from "./routes/Home.svelte";
   import About from "./routes/About.svelte";
   import Portofolio from "./routes/Portofolio.svelte";
   import Contact from "./routes/Contact.svelte";
   let Profile = "images/profile.JPG";
+  const history = createHistory(createMemorySource());
 </script>
 
-<Router>
+<Router {history}>
   <Transition
     transitions="transition transform"
     inTransition="ease-out duration-1000"
