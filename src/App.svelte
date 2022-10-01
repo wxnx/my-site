@@ -77,10 +77,10 @@
       </div>
     </div>
     <main class="scroll-behavior: smooth; overflow-scroll;">
-      <Route path="/" component={Home} />
-      <Route path="About" component={About} />
-      <Route path="Portofolio" component={Portofolio} />
-      <Route path="Contact" component={Contact} />
+      <Route path="/" component='{Home}' />
+      <Route path="About" component='{About}' />
+      <Route path="Portofolio" component='{Portofolio}' />
+      <Route path="Contact" component='{Contact}' />
     </main>
   </Transition>
 </Router>
