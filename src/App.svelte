@@ -81,9 +81,12 @@
               <img src={Profile} alt="PhotoProfile" />
             </div>
           </div>
-          <a class="btn btn-ghost normal-case text-xl" href="/"
-            >Wino Rama Putra</a
-          >
+          <a class="btn btn-ghost normal-case text-xl md:hidden" href="/">
+            Wino
+          </a>
+          <a class="btn btn-ghost normal-case text-xl hidden md:flex" href="/">
+            Wino Rama Putra
+          </a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0">
