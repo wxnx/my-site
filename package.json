@@ -14,14 +14,12 @@
     "daisyui": "^2.31.0",
     "postcss": "^8.4.16",
     "svelte": "^3.49.0",
+    "svelte-typewriter": "^3.0.4",
     "tailwindcss": "^3.1.8",
     "vite": "^3.1.0"
   },
   "dependencies": {
     "svelte-awesome": "^3.0.0",
-    "svelte-class-transition": "^1.0.4",
-    "svelte-navigator": "^3.2.2",
-    "svelte-routing": "^1.6.0",
-    "svelte-typewriter": "^3.0.4"
+    "svelte-class-transition": "^1.0.4"
   }
 }
