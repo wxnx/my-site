@@ -32,17 +32,17 @@
             <Typewriter interval={100}>
               <h2 class="text-4xl text-gray-800 font-bold">Hello!</h2>
             </Typewriter>
-            <!-- <h2 class="text-4xl text-gray-800 font-bold">
-              <Typewriter interval={100} delay={3000}>
+            <h2 class="text-4xl text-gray-800 font-bold">
+              <Typewriter interval={100} delay={900}>
                 <h2>I'm a Creative</h2>
               </Typewriter>
               <Typewriter loop={2000} delay={3500} interval={100}>
-                <span> Coder, </span>
-                <span> Web Developer, </span>
+                <span> Coder </span>
+                <span> Web Developer </span>
                 <span> Python Developer. </span>
               </Typewriter>
-            </h2> -->
-            <Typewriter scramble={1500}>
+            </h2>
+            <Typewriter scramble={900}>
               <!-- Intro -->
               <p class="p-8">
                 {@html description}

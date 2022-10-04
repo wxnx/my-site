@@ -3,13 +3,24 @@
   import Transition from "svelte-class-transition";
   import Typewriter from "svelte-typewriter";
   import Saos from "saos";
-  let linkedin =
-    "https://img.shields.io/badge/-Linkedin-black?style=for-the-badge&logo=Linkedin";
-  let instagram =
-    "https://img.shields.io/badge/-Instagram-black?style=for-the-badge&logo=Instagram";
-  let email =
-    "https://img.shields.io/badge/-Gmail-black?style=for-the-badge&logo=Gmail";
+  import Icon from "svelte-awesome";
+  import {
+    envelopeO,
+    linkedinSquare,
+    instagram,
+    githubSquare,
+  } from "svelte-awesome/icons";
   let set_title = "My Contact";
+  let contact = [
+    [envelopeO, "mailto:wino99oniw@gmail.com", "send me an email"],
+    [
+      linkedinSquare,
+      "https://www.linkedin.com/in/winoramaputra",
+      "my linkedIn",
+    ],
+    [instagram, "https://www.instagram.com/winoramaputra", "my instagram"],
+    [githubSquare, "https://www.github.com/wxnx", "my github"],
+  ];
 </script>
 
 <!-- Contact -->
@@ -27,16 +38,22 @@
         </h1>
       </Typewriter>
 
-      <div class="flex justify-center mt-0 md:space-x-6 lg:space-x-6 py-36">
-        <a href="mailto:wino99oniw@gmail.com">
-          <img class="contact1" src={email} alt="" />
-        </a>
-        <a href="https://www.linkedin.com/in/winoramaputra/">
-          <img class="contact2" src={linkedin} alt="" />
-        </a>
-        <a href="https://www.instagram.com/winoramaputra/">
-          <img class="contact3" src={instagram} alt="" />
-        </a>
+      <div class="flex justify-center items-center py-36">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4"
+        >
+          {#each contact as item}
+            <div>
+              <a class="btn btn" style="width:250px" href={item[1]}>
+                <Icon data={item[0]} />
+                <br />
+                <Typewriter scramble={1000}>
+                  <span class="h6 text-capitalize">{item[2]}</span>
+                </Typewriter>
+              </a>
+            </div>
+          {/each}
+        </div>
       </div>
     </div>
   </Saos>

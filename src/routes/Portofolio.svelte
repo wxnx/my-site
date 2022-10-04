@@ -46,12 +46,18 @@
             <Tab id="0" {isTitle} {isContent}>
               <span slot="title"> Project Experience </span>
               <!-- Project Experience -->
-              <p>
-                These are some of the projects I have worked on. These include
-                the Build Feature Extraction project (as a college final project
-                and also for PPM Telkom University) and Web Development (PPM
-                Telkom University).
-              </p>
+              <Typewriter scramble={900}>
+                <p>
+                  These are some of the projects I have worked on. These include
+                  the <span class="font-bold"
+                    >Build Feature Extraction project with Python</span
+                  >
+                  (as a college final project and also for PPM Telkom University)
+                  and
+                  <span class="font-bold">Web Development with Laravel</span> (PPM
+                  Telkom University).
+                </p>
+              </Typewriter>
               <div
                 class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2"
               >
@@ -110,7 +116,16 @@
             <Tab id="1" {isTitle} {isContent}>
               <span slot="title"> Personal Project </span>
               <!-- Personal Project -->
-              <p>This is a project I'm still working on.</p>
+              <Typewriter scramble={900}>
+                <p>
+                  This is a project I'm still working on. I'm working with <span
+                    class="font-bold">Svelte</span
+                  >
+                  to create a portfolio website, and also with
+                  <span class="font-bold">Python</span> to make automatic tweets
+                  on twitter.
+                </p>
+              </Typewriter>
               <div
                 class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2"
               >

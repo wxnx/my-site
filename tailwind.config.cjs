@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,svelte}"],  theme: {
-  extend: {},
+  content: ["./src/**/*.{html,js,svelte}"], theme: {
+  extend: {fontFamily: {
+    'Montserrat': ["'Montserrat'", 'sans-serif'],
+    'Oswald': ["'Oswald'" ,'sans-serif'],
+  },},
 },
 plugins: [
   require("daisyui")

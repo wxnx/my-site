@@ -17,15 +17,12 @@
   let set_title = "About Me";
   const description =
     "\
-  Hello! I am Wino Rama Putra. I am an adaptable person and have an\
-  interest in technological advances. Interested in programming,\
-  especially in  <span class='font-bold'>Website Development, Mobile Apps Development,</span>\
-  and also related to <span class='font-bold'>Machine Learning</span>. For my interest in \
-  <span class='font-bold'>Mobile Developer</span> is still in\
-  the early stages of learning and for <span class='font-bold'>Machine Learning Engineer</span>\
-  is quite advanced. And now I want to apply my interest as\
-  a <span class='font-bold'>Web Developer</span> to something that has value.\
-  It is not impossible that one day I will apply all my interests to a real value.";
+  Hello! I'm Wino Rama Putra. I am an adaptable person and have an\
+  interest in technological advances. Primarily interested in programming,\
+  I'm working with <span class='font-bold'>Python, PHP, HTML+CSS, SQL, and a little bit JavaScript</span>.\
+  Also I'm familiar with the frameworks like <span class='font-bold'>Laravel, CodeIgniter, Flask, and Svelte</span>.\
+  I also know about <span class='font-bold'>Machine Learning with Python</span>.\
+  Oh, I almost forgot! I also know bit about <span class='font-bold'>Linux</span> too!";
 </script>
 
 <!-- About -->
@@ -48,7 +45,7 @@
 
       <div class="grid flex grid-cols-5 gap-3 text-center py-6">
         <div class="col-start-2 col-span-3">
-          <Typewriter scramble={1500}>
+          <Typewriter scramble={900}>
             <!-- Intro -->
             <p>
               {@html description}
@@ -73,7 +70,7 @@
                         MAY 2020 – AUGUST 2020 (INTERNSHIP)
                       </span>
                       <br />
-                      <Typewriter scramble={1500}>
+                      <Typewriter scramble={900}>
                         <p>
                           Inputting content according to the features available
                           on a
@@ -100,7 +97,7 @@
                         >MAY 2021 – JANUARY 2022 (CONTRACT)</span
                       >
                       <br />
-                      <Typewriter scramble={1500}>
+                      <Typewriter scramble={900}>
                         <p>
                           Develop a website to detect heart valve abnormalities
                           using a <span class="font-bold">Laravel-based</span>
