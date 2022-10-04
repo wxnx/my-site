@@ -44,7 +44,11 @@
         >
           {#each contact as item}
             <div>
-              <a class="btn btn" style="width:250px" href={item[1]}>
+              <a
+                class="btn btn hover:btn-ghost hover:text-base-content m-2"
+                style="width:250px"
+                href={item[1]}
+              >
                 <Icon data={item[0]} />
                 <br />
                 <Typewriter scramble={1000}>

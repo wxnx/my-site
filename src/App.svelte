@@ -54,7 +54,11 @@
             >
               <li>
                 {#each pages as page}
-                  <a title={page.name} on:click={() => loadPage(page)}>
+                  <a
+                    class="hover:btn m-2"
+                    title={page.name}
+                    on:click={() => loadPage(page)}
+                  >
                     {page.name}</a
                   >
                 {/each}
@@ -68,10 +72,13 @@
               <img src={Profile} alt="PhotoProfile" />
             </div>
           </div>
-          <a class="btn btn-ghost normal-case text-xl md:hidden" href="/">
+          <a class="btn btn-ghost normal-case text-xl m-2 md:hidden" href="/">
             Wino
           </a>
-          <a class="btn btn-ghost normal-case text-xl hidden md:flex" href="/">
+          <a
+            class="btn btn-ghost normal-case text-xl m-2 hidden md:flex"
+            href="/"
+          >
             Wino Rama Putra
           </a>
         </div>
@@ -79,7 +86,11 @@
           <ul class="menu menu-horizontal p-0">
             <li>
               {#each pages as page}
-                <a title={page.name} on:click={() => loadPage(page)}>
+                <a
+                  class="hover:btn m-2"
+                  title={page.name}
+                  on:click={() => loadPage(page)}
+                >
                   {page.name}</a
                 >
               {/each}
@@ -87,7 +98,10 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn" href="mailto:wino99oniw@gmail.com">Hire Me</a>
+          <a
+            class="btn hover:btn-ghost hover:text-base-content m-2"
+            href="mailto:wino99oniw@gmail.com">Hire Me</a
+          >
         </div>
       </div>
     </div>

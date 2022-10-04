@@ -73,9 +73,11 @@
                       />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">
-                        Build Feature Extraction Model with Python
-                      </h2>
+                      <Typewriter scramble={900}>
+                        <h2 class="card-title">
+                          Build Feature Extraction Model with Python
+                        </h2>
+                      </Typewriter>
                       <p class="text-gray-800">
                         <a
                           href="https://colab.research.google.com/drive/1rB2JgCGDUaXdUvT-sW3KScLdk9DYKbpW?usp=sharing"
@@ -99,9 +101,11 @@
                       />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">
-                        Web Development with Laravel Framework
-                      </h2>
+                      <Typewriter scramble={900}>
+                        <h2 class="card-title">
+                          Web Development with Laravel Framework
+                        </h2>
+                      </Typewriter>
                       <p class="text-gray-800">
                         <a href="https://github.com/wxnx/stetoskop_digital.git">
                           <Icon data={externalLink} scale={1.2} /> &nbsp; Find out
@@ -141,7 +145,11 @@
                       />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Development My Portfolio Site</h2>
+                      <Typewriter scramble={900}>
+                        <h2 class="card-title">
+                          Development My Portfolio Site
+                        </h2>
+                      </Typewriter>
                       <p class="text-gray-800">
                         <a href="https://github.com/wxnx/my-site.git">
                           <Icon data={externalLink} scale={1.2} /> &nbsp; Find out
@@ -163,7 +171,9 @@
                       />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Twitter Bot</h2>
+                      <Typewriter scramble={900}>
+                        <h2 class="card-title">Twitter Bot</h2>
+                      </Typewriter>
                       <p class="text-gray-800">
                         <a href="https://github.com/wxnx/twitter-bot.git">
                           <Icon data={externalLink} scale={1.2} /> &nbsp; Find out
@@ -182,7 +192,9 @@
                 class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2"
               >
                 <div>
-                  <h3 class="text-2xl font-bold">Github Statistic</h3>
+                  <Typewriter scramble={900}>
+                    <h3 class="text-2xl font-bold">Github Statistic</h3>
+                  </Typewriter>
                   <p>
                     These are some statistic from <a
                       class="link link-hover"
@@ -217,7 +229,9 @@
                   </div>
                 </div>
                 <div class="mt-10">
-                  <h3 class="text-2xl font-bold">Coding Statistic</h3>
+                  <Typewriter scramble={900}>
+                    <h3 class="text-2xl font-bold">Coding Statistic</h3>
+                  </Typewriter>
                   <p>
                     These are some statistic from my coding activity by <a
                       class="link link-hover"

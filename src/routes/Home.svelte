@@ -48,11 +48,13 @@
                 {@html description}
               </p>
             </Typewriter>
-            <a
-              class="btn btn"
+            <Typewriter scramble={900}>
+              <a
+              class="btn btn hover:btn-ghost hover:text-base-content"
               href="https://drive.google.com/uc?id=1Do1zZA-COMqyzGTPFPtig7L09O5enzbl&export=download"
               >Download Resume</a
             >
+            </Typewriter>
           </Saos>
         </div>
       </div>
