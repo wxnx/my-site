@@ -7,7 +7,7 @@
   import Tab from "../lib/Tab.svelte";
   import Icon from "svelte-awesome";
   import { externalLink } from "svelte-awesome/icons";
-  let Profile = "images/profile.JPG";
+
   let Stats =
     "https://github-readme-stats.vercel.app/api?username=wxnx&show_icons=true&theme=dark&custom_title=Github%20Stats&layout=compact&count_private=true";
   let Used_Language =
@@ -46,18 +46,27 @@
             <Tab id="0" {isTitle} {isContent}>
               <span slot="title"> Project Experience </span>
               <!-- Project Experience -->
-              <Typewriter scramble={900}>
-                <p>
-                  These are some of the projects I have worked on. These include
-                  the <span class="font-bold"
-                    >Build Feature Extraction project with Python</span
-                  >
-                  (as a college final project and also for PPM Telkom University)
-                  and
-                  <span class="font-bold">Web Development with Laravel</span> (PPM
-                  Telkom University).
-                </p>
-              </Typewriter>
+              <div
+                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out m-2"
+              >
+                <div class="card w-full">
+                  <div class="card-body">
+                    <Typewriter scramble={900}>
+                      <p>
+                        These are some of the projects I have worked on. These
+                        include the <span class="font-bold"
+                          >Build Feature Extraction project with Python</span
+                        >
+                        (as a college final project and also for PPM Telkom University)
+                        and
+                        <span class="font-bold"
+                          >Web Development with Laravel</span
+                        > (PPM Telkom University).
+                      </p>
+                    </Typewriter>
+                  </div>
+                </div>
+              </div>
               <div
                 class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2"
               >
@@ -120,16 +129,24 @@
             <Tab id="1" {isTitle} {isContent}>
               <span slot="title"> Personal Project </span>
               <!-- Personal Project -->
-              <Typewriter scramble={900}>
-                <p>
-                  This is a project I'm still working on. I'm working with <span
-                    class="font-bold">Svelte</span
-                  >
-                  to create a portfolio website, and also with
-                  <span class="font-bold">Python</span> to make automatic tweets
-                  on twitter.
-                </p>
-              </Typewriter>
+              <div
+                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out m-2"
+              >
+                <div class="card w-full">
+                  <div class="card-body">
+                    <Typewriter scramble={900}>
+                      <p>
+                        This is a project I'm still working on. I'm working with <span
+                          class="font-bold">Svelte</span
+                        >
+                        to create a portfolio website, and also with
+                        <span class="font-bold">Python</span> to make automatic tweets
+                        on twitter.
+                      </p>
+                    </Typewriter>
+                  </div>
+                </div>
+              </div>
               <div
                 class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2"
               >
@@ -188,68 +205,74 @@
             <Tab id="2" {isTitle} {isContent}>
               <span slot="title"> Personal Statistic </span>
               <!-- Personal Statistic -->
-              <div
-                class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2"
-              >
-                <div>
-                  <Typewriter scramble={900}>
-                    <h3 class="text-2xl font-bold">Github Statistic</h3>
-                  </Typewriter>
-                  <p>
-                    These are some statistic from <a
-                      class="link link-hover"
-                      href="https://github.com/wxnx">my github</a
-                    > .
-                  </p>
-                </div>
-                <div>
-                  <div
-                    class="lg:mx-36 card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
-                  >
-                    <figure>
-                      <img
-                        src={Stats}
-                        class="w-full rounded-xl"
-                        alt="Git Stats"
-                      />
-                    </figure>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="lg:mx-36 card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
-                  >
-                    <figure>
-                      <img
-                        src={Used_Language}
-                        class="w-full rounded-xl"
-                        alt="Languages Stats"
-                      />
-                    </figure>
-                  </div>
-                </div>
-                <div class="mt-10">
-                  <Typewriter scramble={900}>
-                    <h3 class="text-2xl font-bold">Coding Statistic</h3>
-                  </Typewriter>
-                  <p>
-                    These are some statistic from my coding activity by <a
-                      class="link link-hover"
-                      href="https://wakatime.com/@wxnx">Wakatime</a
-                    > .
-                  </p>
-                </div>
-                <div class="lg:mx-36">
-                  <div
-                    class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
-                  >
-                    <figure>
-                      <img
-                        src={Coding_Stats}
-                        class="w-full rounded-xl"
-                        alt="Coding Activity"
-                      />
-                    </figure>
+              <div class="card relative bg-base-100 shadow-xl">
+                <div class="card w-full">
+                  <div class="card-body">
+                    <div
+                      class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2"
+                    >
+                      <div>
+                        <Typewriter scramble={900}>
+                          <h3 class="text-2xl font-bold">Github Statistic</h3>
+                        </Typewriter>
+                        <p>
+                          These are some statistic from <a
+                            class="link link-hover"
+                            href="https://github.com/wxnx">my github</a
+                          > .
+                        </p>
+                      </div>
+                      <div>
+                        <div
+                          class="lg:mx-36 card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                        >
+                          <figure>
+                            <img
+                              src={Stats}
+                              class="w-full rounded-xl"
+                              alt="Git Stats"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="lg:mx-36 card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                        >
+                          <figure>
+                            <img
+                              src={Used_Language}
+                              class="w-full rounded-xl"
+                              alt="Languages Stats"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="mt-10">
+                        <Typewriter scramble={900}>
+                          <h3 class="text-2xl font-bold">Coding Statistic</h3>
+                        </Typewriter>
+                        <p>
+                          These are some statistic from my coding activity by <a
+                            class="link link-hover"
+                            href="https://wakatime.com/@wxnx">Wakatime</a
+                          > .
+                        </p>
+                      </div>
+                      <div class="lg:mx-36">
+                        <div
+                          class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                        >
+                          <figure>
+                            <img
+                              src={Coding_Stats}
+                              class="w-full rounded-xl"
+                              alt="Coding Activity"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -6,7 +6,7 @@
   import Portofolio from "./routes/Portofolio.svelte";
   import Contact from "./routes/Contact.svelte";
 
-  let Profile = "images/profile.JPG";
+  let Profile = "images/profile.webp 1024w";
 
   const pages = [
     { name: "Home", component: Home },
@@ -30,7 +30,7 @@
     onState="opacity-100 translate-x-0"
   >
     <div class="container mx-auto fixed-top">
-      <div class="navbar bg-base-100">
+      <div class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden" for="">
@@ -50,26 +50,30 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow-xl bg-navbar rounded-box w-52"
             >
               <li>
                 {#each pages as page}
-                  <a
+                  <button
                     class="hover:btn m-2"
                     title={page.name}
                     on:click={() => loadPage(page)}
                   >
-                    {page.name}</a
+                    {page.name}</button
                   >
                 {/each}
               </li>
             </ul>
           </div>
-          <div class="avatar">
+          <div class="avatar m-2">
             <div
               class="w-12 rounded-full ring ring-neutral ring-offset-base-100 ring-offset-2"
             >
-              <img src={Profile} alt="PhotoProfile" />
+              <picture>
+                <source type="image/webp" srcset={Profile} />
+                <source srcset={Profile} />
+                <img alt="Profile" />
+              </picture>
             </div>
           </div>
           <a class="btn btn-ghost normal-case text-xl m-2 md:hidden" href="/">
@@ -86,12 +90,12 @@
           <ul class="menu menu-horizontal p-0">
             <li>
               {#each pages as page}
-                <a
+                <button
                   class="hover:btn m-2"
                   title={page.name}
                   on:click={() => loadPage(page)}
                 >
-                  {page.name}</a
+                  {page.name}</button
                 >
               {/each}
             </li>

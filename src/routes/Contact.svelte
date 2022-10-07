@@ -10,6 +10,7 @@
     instagram,
     githubSquare,
   } from "svelte-awesome/icons";
+
   let set_title = "My Contact";
   let contact = [
     [envelopeO, "mailto:wino99oniw@gmail.com", "send me an email"],
@@ -49,7 +50,7 @@
                 style="width:250px"
                 href={item[1]}
               >
-                <Icon data={item[0]} />
+                <Icon data={item[0]} /> &nbsp;
                 <br />
                 <Typewriter scramble={1000}>
                   <span class="h6 text-capitalize">{item[2]}</span>

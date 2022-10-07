@@ -7,6 +7,7 @@
   import Tab from "../lib/Tab.svelte";
   import Icon from "svelte-awesome";
   import { graduationCap, book, language } from "svelte-awesome/icons";
+
   const aboutData = [
     { title: "Experience", content: "Tab 1" },
     { title: "Education", content: "Tab 2" },
@@ -42,7 +43,6 @@
           {set_title}
         </h1>
       </Typewriter>
-
       <div class="grid flex grid-cols-5 gap-3 text-center py-6">
         <div class="col-start-2 col-span-3">
           <Typewriter scramble={900}>
@@ -57,102 +57,123 @@
             <Tab id="0" {isTitle} {isContent}>
               <span slot="title"> Experience </span>
               <!-- Experience -->
-              <div class=" w-full">
-                <table class="table-compact w-full">
-                  <thead>
-                    <tr>
-                      <th> WEB CONTENT ADMINISTRATOR, TELKOM UNIVERSITY </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <td>
-                      <span class="badge badge-ghost badge-sm">
-                        MAY 2020 – AUGUST 2020 (INTERNSHIP)
-                      </span>
-                      <br />
-                      <Typewriter scramble={900}>
-                        <p>
-                          Inputting content according to the features available
-                          on a
-                          <span class="font-bold">WordPress-based </span> website.
-                        </p>
-                      </Typewriter>
-                    </td>
-                  </tbody>
-                </table>
-              </div>
-              <div class="w-full">
-                <table class="table-compact w-full">
-                  <thead>
-                    <tr>
-                      <th>
-                        WEB DEVELOPER PROTOTYPE STETOSKOP DIGITAL, PPM TELKOM
-                        UNIVERSITY
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <td>
-                      <span class="badge badge-ghost badge-sm"
-                        >MAY 2021 – JANUARY 2022 (CONTRACT)</span
-                      >
-                      <br />
-                      <Typewriter scramble={900}>
-                        <p>
-                          Develop a website to detect heart valve abnormalities
-                          using a <span class="font-bold">Laravel-based</span>
-                          web framework and to model the detection of heart valve
-                          abnormalities using
-                          <span class="font-bold">Machine Learning</span>
-                          with <span class="font-bold">Python</span>
-                          algorithms. The result of this research is a website prototype
-                          based on localhost.
-                        </p>
-                      </Typewriter>
-                    </td>
-                  </tbody>
-                </table>
+              <div
+                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+              >
+                <div class="card w-full">
+                  <div class="card-body">
+                    <table class="table-compact w-full">
+                      <thead>
+                        <tr>
+                          <th>
+                            WEB CONTENT ADMINISTRATOR, TELKOM UNIVERSITY
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <td>
+                          <span class="badge badge-ghost badge-sm">
+                            MAY 2020 – AUGUST 2020 (INTERNSHIP)
+                          </span>
+                          <br />
+                          <Typewriter scramble={900}>
+                            <p>
+                              Inputting content according to the features
+                              available on a
+                              <span class="font-bold">WordPress-based </span> website.
+                            </p>
+                          </Typewriter>
+                        </td>
+                      </tbody>
+                    </table>
+                    <table class="table-compact w-full">
+                      <thead>
+                        <tr>
+                          <th>
+                            WEB DEVELOPER PROTOTYPE STETOSKOP DIGITAL, PPM
+                            TELKOM UNIVERSITY
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <td>
+                          <span class="badge badge-ghost badge-sm"
+                            >MAY 2021 – JANUARY 2022 (CONTRACT)</span
+                          >
+                          <br />
+                          <Typewriter scramble={900}>
+                            <p>
+                              Develop a website to detect heart valve
+                              abnormalities using a <span class="font-bold"
+                                >Laravel-based</span
+                              >
+                              web framework and to model the detection of heart valve
+                              abnormalities using
+                              <span class="font-bold">Machine Learning</span>
+                              with <span class="font-bold">Python</span>
+                              algorithms. The result of this research is a website
+                              prototype based on localhost.
+                            </p>
+                          </Typewriter>
+                        </td>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </Tab>
             <Tab id="1" {isTitle} {isContent}>
               <span slot="title"> Education </span>
               <!-- Education -->
-              <div class="card w-full">
-                <div class="card-body">
-                  <p>
-                    <Icon data={graduationCap} scale={1.5} /> &nbsp; Bachelor of
-                    Informatics : Telkom University (2017-2022)
-                  </p>
+              <div
+                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+              >
+                <div class="card w-full">
+                  <div class="card-body">
+                    <p>
+                      <Icon data={graduationCap} scale={1.5} /> &nbsp; Bachelor of
+                      Informatics : Telkom University (2017-2022)
+                    </p>
+                  </div>
                 </div>
               </div>
             </Tab>
             <Tab id="2" {isTitle} {isContent}>
               <span slot="title"> Publication </span>
               <!-- Publication -->
-              <div class="card w-full">
-                <div class="card-body">
-                  <p>
-                    <a
-                      class="link link-hover"
-                      href="https://ieeexplore.ieee.org/document/9689119"
-                      ><Icon data={book} scale={1.5} /> &nbsp; Study of Feature Extraction
-                      Methods to Detect Valvular Heart Disease (VHD) Using a Phonocardiogram</a
-                    >
-                  </p>
+              <div
+                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+              >
+                <div class="card w-full">
+                  <div class="card-body">
+                    <p>
+                      <a
+                        class="link link-hover"
+                        href="https://ieeexplore.ieee.org/document/9689119"
+                        ><Icon data={book} scale={1.5} /> &nbsp; Study of Feature
+                        Extraction Methods to Detect Valvular Heart Disease (VHD)
+                        Using a Phonocardiogram</a
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </Tab>
             <Tab id="3" {isTitle} {isContent}>
               <span slot="title"> Languages </span>
               <!-- Languages -->
-              <div class="card w-full">
-                <div class="card-body">
-                  <p>
-                    <Icon data={language} scale={1.5} /> &nbsp; Indonesia : Native
-                    or bilingual proficiency <br />
-                    <Icon data={language} scale={1.5} /> &nbsp; English : Limited
-                    working proficiency
-                  </p>
+              <div
+                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+              >
+                <div class="card w-full">
+                  <div class="card-body">
+                    <p>
+                      <Icon data={language} scale={1.5} /> &nbsp; Indonesia : Native
+                      or bilingual proficiency <br />
+                      <Icon data={language} scale={1.5} /> &nbsp; English : Limited
+                      working proficiency
+                    </p>
+                  </div>
                 </div>
               </div>
             </Tab>
