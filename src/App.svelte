@@ -76,11 +76,11 @@
               </picture>
             </div>
           </div>
-          <a class="btn btn-ghost normal-case text-xl m-2 md:hidden" href="/">
+          <a class="btn btn-ghost normal-case text-xl m-2 xl:hidden" href="/">
             Wino
           </a>
           <a
-            class="btn btn-ghost normal-case text-xl m-2 hidden md:flex"
+            class="btn btn-ghost normal-case text-xl m-2 hidden xl:flex"
             href="/"
           >
             Wino Rama Putra

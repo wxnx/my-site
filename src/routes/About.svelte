@@ -66,13 +66,51 @@
                       <thead>
                         <tr>
                           <th>
+                            WEB DEVELOPER PROTOTYPE STETOSKOP DIGITAL, PPM
+                            TELKOM UNIVERSITY
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span
+                              class="lg:badge lg:badge-ghost badge-sm badge-ghost"
+                            >
+                              MAY 2021 – JANUARY 2022 (CONTRACT)</span
+                            >
+                            <br />
+                            <Typewriter scramble={900}>
+                              <p>
+                                Develop a website to detect heart valve
+                                abnormalities using a <span class="font-bold"
+                                  >Laravel-based</span
+                                >
+                                web framework and to model the detection of heart
+                                valve abnormalities using
+                                <span class="font-bold">Machine Learning</span>
+                                with <span class="font-bold">Python</span>
+                                algorithms. The result of this research is a website
+                                prototype based on localhost.
+                              </p>
+                            </Typewriter>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="table-compact w-full">
+                      <thead>
+                        <tr>
+                          <th>
                             WEB CONTENT ADMINISTRATOR, TELKOM UNIVERSITY
                           </th>
                         </tr>
                       </thead>
                       <tbody>
                         <td>
-                          <span class="badge badge-ghost badge-sm">
+                          <span
+                            class="lg:badge lg:badge-ghost badge-sm badge-ghost"
+                          >
                             MAY 2020 – AUGUST 2020 (INTERNSHIP)
                           </span>
                           <br />
@@ -81,38 +119,6 @@
                               Inputting content according to the features
                               available on a
                               <span class="font-bold">WordPress-based </span> website.
-                            </p>
-                          </Typewriter>
-                        </td>
-                      </tbody>
-                    </table>
-                    <table class="table-compact w-full">
-                      <thead>
-                        <tr>
-                          <th>
-                            WEB DEVELOPER PROTOTYPE STETOSKOP DIGITAL, PPM
-                            TELKOM UNIVERSITY
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <td>
-                          <span class="badge badge-ghost badge-sm"
-                            >MAY 2021 – JANUARY 2022 (CONTRACT)</span
-                          >
-                          <br />
-                          <Typewriter scramble={900}>
-                            <p>
-                              Develop a website to detect heart valve
-                              abnormalities using a <span class="font-bold"
-                                >Laravel-based</span
-                              >
-                              web framework and to model the detection of heart valve
-                              abnormalities using
-                              <span class="font-bold">Machine Learning</span>
-                              with <span class="font-bold">Python</span>
-                              algorithms. The result of this research is a website
-                              prototype based on localhost.
                             </p>
                           </Typewriter>
                         </td>
