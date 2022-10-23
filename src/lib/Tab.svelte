@@ -30,7 +30,7 @@
 
 <style>
   .selected {
-    background: white;
+    background: #d8d8f6;
     color: black;
     cursor: default;
   }

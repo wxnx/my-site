@@ -35,7 +35,7 @@
 >
   <Saos animation={"load 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
     <div
-      class="container mx-auto min-h-screen justify-center items-center pt-20"
+      class="container mx-auto min-h-screen justify-center items-center pt-24 sm:pt-32"
       id="About"
     >
       <Typewriter interval={100}>
@@ -58,7 +58,7 @@
               <span slot="title"> Experience </span>
               <!-- Experience -->
               <div
-                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
               >
                 <div class="card w-full">
                   <div class="card-body">
@@ -132,7 +132,7 @@
               <span slot="title"> Education </span>
               <!-- Education -->
               <div
-                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
               >
                 <div class="card w-full">
                   <div class="card-body">
@@ -148,7 +148,7 @@
               <span slot="title"> Publication </span>
               <!-- Publication -->
               <div
-                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
               >
                 <div class="card w-full">
                   <div class="card-body">
@@ -169,7 +169,7 @@
               <span slot="title"> Languages </span>
               <!-- Languages -->
               <div
-                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
               >
                 <div class="card w-full">
                   <div class="card-body">

@@ -10,6 +10,18 @@
   background-color: #d8d8f6;
 }
 
+.bg-class-nav{
+  background: rgba(216, 216, 246, 0.31);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.bg-class-content{
+  background: rgba(216, 216, 246, 0.31);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
 .fixed-top {
     position: fixed;
     top: 0;

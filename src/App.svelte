@@ -30,7 +30,7 @@
     onState="opacity-100 translate-x-0"
   >
     <div class="container mx-auto fixed-top">
-      <div class="navbar">
+      <div class="navbar bg-class-nav sm:rounded-full sm:mt-6">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden" for="">

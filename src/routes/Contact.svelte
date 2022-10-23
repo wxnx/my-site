@@ -32,16 +32,16 @@
   onState="opacity-100 translate-x-0"
 >
   <Saos animation={"load 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
-    <div class="container mx-auto min-h-screen py-20" id="Contact">
+    <div class="container mx-auto min-h-screen pt-24 sm:pt-32" id="Contact">
       <Typewriter interval={100}>
         <h1 class="text-4xl text-gray-800 font-bold text-center">
           {set_title}
         </h1>
       </Typewriter>
 
-      <div class="flex justify-center items-center py-36">
+      <div class="flex justify-center items-center py-8 sm:py-36">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {#each contact as item}
             <div>

@@ -31,7 +31,7 @@
 >
   <Saos animation={"load 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
     <div
-      class="container mx-auto min-h-screen justify-center items-center pt-20"
+      class="container mx-auto min-h-screen justify-center items-center pt-24 sm:pt-32"
       id="Portofolio"
     >
       <Typewriter interval={100}>
@@ -47,7 +47,7 @@
               <span slot="title"> Project Experience </span>
               <!-- Project Experience -->
               <div
-                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out m-2"
+                class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out m-2"
               >
                 <div class="card w-full">
                   <div class="card-body">
@@ -72,7 +72,7 @@
               >
                 <div>
                   <div
-                    class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                    class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
                   >
                     <figure class="px-10 pt-10">
                       <img
@@ -100,7 +100,7 @@
                 </div>
                 <div>
                   <div
-                    class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                    class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
                   >
                     <figure class="px-10 pt-10">
                       <img
@@ -130,7 +130,7 @@
               <span slot="title"> Personal Project </span>
               <!-- Personal Project -->
               <div
-                class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out m-2"
+                class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out m-2"
               >
                 <div class="card w-full">
                   <div class="card-body">
@@ -152,7 +152,7 @@
               >
                 <div>
                   <div
-                    class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                    class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
                   >
                     <figure class="px-10 pt-10">
                       <img
@@ -178,7 +178,7 @@
                 </div>
                 <div>
                   <div
-                    class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                    class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
                   >
                     <figure class="px-10 pt-10">
                       <img
@@ -205,7 +205,7 @@
             <Tab id="2" {isTitle} {isContent}>
               <span slot="title"> Personal Statistic </span>
               <!-- Personal Statistic -->
-              <div class="card relative bg-base-100 shadow-xl">
+              <div class="card relative bg-class-content">
                 <div class="card w-full">
                   <div class="card-body">
                     <div
@@ -224,7 +224,7 @@
                       </div>
                       <div>
                         <div
-                          class="lg:mx-36 card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                          class="lg:mx-36 card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
                         >
                           <figure>
                             <img
@@ -237,7 +237,7 @@
                       </div>
                       <div>
                         <div
-                          class="lg:mx-36 card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                          class="lg:mx-36 card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
                         >
                           <figure>
                             <img
@@ -261,7 +261,7 @@
                       </div>
                       <div class="lg:mx-36">
                         <div
-                          class="card relative bg-base-100 shadow-xl hover:scale-110 transition duration-300 ease-in-out"
+                          class="card relative bg-class-content hover:scale-110 transition duration-300 ease-in-out"
                         >
                           <figure>
                             <img

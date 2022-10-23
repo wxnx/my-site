@@ -24,7 +24,7 @@
   inState="opacity-0 -translate-y-16"
   onState="opacity-100 translate-x-0"
 >
-  <div class="py-20 md:py-0" id="Home">
+  <div class="pt-12 sm:pt-0" id="Home">
     <div class="hero min-h-screen">
       <div class="hero-content text-center">
         <div class="md:max-w-2xl">
