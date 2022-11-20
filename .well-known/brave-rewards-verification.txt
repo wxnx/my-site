@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: wxnx.ninja
+Domain: winoramaputra.me
 Token: 52886a667c42296c2d9a08d1229076ade140ca22fa4f149cfd827ce79f3a8f85
