@@ -20,10 +20,10 @@
     "\
   Hello! I'm Wino Rama Putra. I am an adaptable person and have an\
   interest in technological advances. Primarily interested in programming,\
-  I'm working with <span class='font-bold'>Python, PHP, HTML+CSS, SQL, and a little bit JavaScript</span>.\
+  I'm working with <span class='font-bold'>Python, PHP, Pro*C, HTML+CSS, SQL, and a little bit JavaScript</span>.\
   Also I'm familiar with the frameworks like <span class='font-bold'>Laravel, CodeIgniter, Flask, and Svelte</span>.\
   I also know about <span class='font-bold'>Machine Learning with Python</span>.\
-  Oh, I almost forgot! I also know bit about <span class='font-bold'>Linux</span> too!";
+  Oh, I almost forgot! I also know bit about <span class='font-bold'>Linux/Unix</span> too!";
 </script>
 
 <!-- About -->
@@ -62,6 +62,40 @@
               >
                 <div class="card w-full">
                   <div class="card-body">
+                    <table class="table-compact w-full">
+                      <thead>
+                        <tr>
+                          <th>
+                            IT Treasury and Wealth Assistant Manager, PT Bank
+                            KEB Hana Indonesia
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span
+                              class="lg:badge lg:badge-ghost badge-sm badge-ghost"
+                            >
+                              OCTOBER 2022 – NOW
+                            </span>
+                            <br />
+                            <Typewriter scramble={900}>
+                              <p>
+                                Developing and maintaining IT Core Banking.
+                                Works with <span class="font-bold">Pro*C</span>,
+                                <span class="font-bold">Oracle SQL</span>,
+                                <span class="font-bold">Unix/Linux Bash</span>,
+                                <span class="font-bold">SecureCRT</span>,
+                                <span class="font-bold">HTML</span>,
+                                <span class="font-bold">XML</span>, and
+                                <span class="font-bold">JavaScript</span>.
+                              </p>
+                            </Typewriter>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                     <table class="table-compact w-full">
                       <thead>
                         <tr>
